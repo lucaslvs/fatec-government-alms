@@ -1,4 +1,4 @@
-# fatec-scraping-government-alms
+# fatec-government-alms
 Um Scraper desenvolvido em Python com o framework Scrapy, que busca os gastos com o programa do estado Bolsa Família, com dados de 2004 em diante.
 
 ## Instalando as Dependências
