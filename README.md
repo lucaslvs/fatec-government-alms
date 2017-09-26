@@ -6,7 +6,7 @@ Um Scraper desenvolvido em Python com o framework Scrapy, que busca os gastos co
 >Entre no repositório e crie um ambiente virtual com o virtualenv:
 
 ```sh
-cd fatec-scraping-government-alms
+cd fatec-government-alms
 virtualenv venv
 ```
 
