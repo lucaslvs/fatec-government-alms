@@ -2,7 +2,7 @@ import scrapy
 import datetime
 
 
-class AlmsSpiderSpider(scrapy.Spider):
+class AlmsSpider(scrapy.Spider):
     name = 'alms_spider'
     start_urls = []
     url_base = 'http://www.portaldatransparencia.gov.br/PortalTransparenciaPesquisaAcaoUF.asp?codigoAcao=006O&codigoFuncao=08&NomeAcao=Transfer%EAncia+de+Renda+Diretamente+%E0s+Fam%EDlias+em+Condi%E7%E3o+de+Pobreza+e+Extrema+Pobreza+%28Lei+n%BA+10%2E836%2C+de+2004%29&Exercicio='
@@ -28,12 +28,8 @@ class AlmsSpiderSpider(scrapy.Spider):
         for v in range(2):
             all_values.remove(all_values[0])
         for line in range(len(all_states)):
-            all_values[line] = all_values[line].replace(".", "")
-            all_values[line] = all_values[line].replace(",", ".")
-            all_values[line] = all_values[line].strip()
-            all_values[line] = all_values[line][:-3]
             yield {
                 'year': year,
                 'state': all_states[line],
-                'value': int(all_values[line])
+                'value': int(all_values[line].replace(".", "").replace(",", ".").strip()[:-3])
             }
