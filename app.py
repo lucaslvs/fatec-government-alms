@@ -85,8 +85,7 @@ def main():
 
   Por motivos de organização os métodos de geração de gráficos podem ser implementados no arquivo plot.py 
   """
-  menu(json.loads(api_data))
-
+    menu(json.loads(api_data))
 
 if __name__ == '__main__':
     main()

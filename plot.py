@@ -2,6 +2,7 @@ import json
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 from pandas.io.json import json_normalize
 
 def plot_all_years(json_data):
@@ -17,10 +18,7 @@ def plot_year(json_data, year):
 
 
 def plot_state(json_data, state):
-    with open('dados.json') as dados:
-        data = json.load(dados)
-        data2 = data
-        data = json_normalize(data)
+    data = json_normalize(json_data)
     
     valores = []
     anos = []
