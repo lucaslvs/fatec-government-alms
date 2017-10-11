@@ -27,5 +27,5 @@ pip install -r requirements.txt
 >Para executar a aplicação execute:
 
 ```py
-python app.py
+python Main.py
 ```
