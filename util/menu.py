@@ -1,4 +1,4 @@
-from Plot import Plot
+from plot import Plot
 
 class Menu():
 

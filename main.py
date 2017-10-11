@@ -1,6 +1,6 @@
 import json
 import os
-from Mapper import Mapper
+from util.mapper import Mapper
 
 class Main():
     def main(self):

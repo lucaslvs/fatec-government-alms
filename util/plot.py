@@ -35,7 +35,7 @@ class Plot():
         for key in range(0, (end - start) + 1):
             g2.append(self.data.allStates[state2][str(start + key)])
         
-        plt.title('O crescimento médio dos gastos entre', state, 'e', state2)
+        plt.title('O crescimento médio dos gastos entre ' + state + ' e ' + state2 + '\n')
         plt.ylabel('Gastos (Bilhões)')
         plt.plot(g1, 'C2', marker = 'o', ms = 6, label = state)
         plt.plot(g2, 'C3', marker = 'o', ms = 6, label = state2)
