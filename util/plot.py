@@ -46,7 +46,6 @@ class Plot():
 
         for key in range(0, (end - start) + 1):
             g1.append(self.data.allStates[state][str(start + key)])
-        for key in range(0, (end - start) + 1):
             g2.append(self.data.allStates[state2][str(start + key)])
 
         anos = np.arange(start, end + 1)
@@ -61,6 +60,23 @@ class Plot():
         plt.xticks(y, anos)
         plt.legend()
         plt.show()
+
+
+    def plot_percent_year(self, state, start, end):
+        g1 = []
+
+        for key in range(0, (end - start) + 1):
+            g1.append(self.data.allStates[state][str(start + key)])
+
+        anos = np.arange(start, end + 1)
+
+        plt.figure(1, figsize=(8,8))
+        plt.rcParams['font.size'] = 6.0
+        plt.title('Representação dos gastos nos anos entre ' + str(start) + ' e ' + str(end) + ' em ' + state)
+        plt.axis('equal')
+        plt.pie(g1, labels = anos, autopct = "%1.1f%%")
+        plt.show()
+        
 
     def plot_timeline(self, state, start, end):
         gasto = []
