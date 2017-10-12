@@ -32,7 +32,7 @@ class Plot():
         plt.title('Crescimento de gastos individual')
         scat_plot = plt.scatter(g1[:-1], self.anos[:-1], alpha = 1.0, c = self.anos[:-1], label = state)
         plt.ylabel('Anos (Intervalo de 2 anos)')
-        plt.xlabel('Gastos (Bilhões)')
+        plt.xlabel('Gastos (Milhões) - Dividido por 100000 para facilitar a visualização')
         plt.xticks(g1[::2])
         plt.legend()
         plt.show()
