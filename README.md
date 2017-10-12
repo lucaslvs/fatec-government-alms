@@ -1,6 +1,37 @@
 # fatec-government-alms
 Um Scraper desenvolvido em Python com o framework Scrapy, que busca os gastos com o programa do estado Bolsa Família, com dados de 2004 em diante.
 
+## Configurando ambiente
+
+>Entre no repositório e crie um ambiente virtual com o virtualenv:
+
+```sh
+cd fatec-government-alms
+virtualenv venv
+```
+
+>Ative o ambiente virtual:
+
+```sh
+source venv/bin/activate
+```
+
+>Instale as dependências:
+
+```sh
+pip install -r requirements.txt
+```
+
+## Executando
+
+>Para executar a aplicação execute:
+
+```py
+python Main.py
+```
+
+
+
 ## Utilização - Plots
 
 Para utilizar os métodos de plot é necessário criar um objeto da classe Plot.
@@ -42,32 +73,3 @@ Por fim se necessário exibir todos os dados, e um comparativo de representaçã
 plt.plot_total()
 ```
 ![GitHub Logo](/images/plot_total.png)
-
-## Configurando ambiente
-
->Entre no repositório e crie um ambiente virtual com o virtualenv:
-
-```sh
-cd fatec-government-alms
-virtualenv venv
-```
-
->Ative o ambiente virtual:
-
-```sh
-source venv/bin/activate
-```
-
->Instale as dependências:
-
-```sh
-pip install -r requirements.txt
-```
-
-## Executando
-
->Para executar a aplicação execute:
-
-```py
-python Main.py
-```
