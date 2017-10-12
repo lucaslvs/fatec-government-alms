@@ -34,41 +34,41 @@ python main.py
 
 ## Utilização - Plots
 
-Para utilizar os métodos de plot é necessário criar um objeto da classe Plot.
+>Para utilizar os métodos de plot é necessário criar um objeto da classe Plot.
 ```python
 from util.plot import Plot
 plt = Plot()
 ```
 
-A utilização das classes é bastante simples, veja:
+>A utilização das classes é bastante simples, veja:
 
-Para fazer o plot do gráfico de gastos dentro de um período de tempo, em um certo estado, basta utilizar:
+>Para fazer o plot do gráfico de gastos dentro de um período de tempo, em um certo estado, basta utilizar:
 
 ```python
 plt.plot_timeline('BAHIA', 2004, 2007)
 ```
 ![GitHub Logo](/images/plot_timeline.png)
 
-O plot do gráfico de comparação de gastos entre estados use:
+>O plot do gráfico de comparação de gastos entre estados use:
 ```python
 plt.verify_mean('BAHIA', 'RORAIMA', 2004, 2007)
 ```
 ![GitHub Logo](/images/plot_verify_mean.png)
 
-Caso queira gerar os gastos de um único estado, em todos os anos, use:
+>Caso queira gerar os gastos de um único estado, em todos os anos, use:
 ```python
 plt.plot_only_out('SÃO PAULO')
 ```
 ![GitHub Logo](/images/plot_only_out.png)
 
-Se necessário gerar o gasto em um ano específico, use:
+>Se necessário gerar o gasto em um ano específico, use:
 ```python
 plt.plot_state_year('SERGIPE', 2007)
 ```
 ![GitHub Logo](/images/plot_state_year.png)
 
 
-Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
+>Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
 ```python
 plt.plot_total()
 ```
