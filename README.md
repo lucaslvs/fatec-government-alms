@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ## Executando
 
->Para executar a aplicação execute:
+>Para executar o script para extração, estruturação e o arquivo com os dados em fortamto *JSON* execute:
 
 ```py
 python main.py
