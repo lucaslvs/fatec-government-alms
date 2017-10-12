@@ -30,8 +30,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
-
-
 ## Utilização - Plots
 
 >Para utilizar os métodos de plot é necessário criar um objeto da classe Plot.
@@ -67,6 +65,11 @@ plt.plot_state_year('SERGIPE', 2007)
 ```
 ![GitHub Logo](/images/plot_state_year.png)
 
+>Se quiser verificar qual a porcentagem de gasto de cada ano de um determinado estado utilize
+```python
+plt.plot_percent_year('RORAIMA', 2004, 2014)
+```
+![GitHub Logo](/images/plot_percent_year.png)
 
 >Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
 ```python
