@@ -51,7 +51,7 @@ plt.plot_timeline('BAHIA', 2004, 2007)
 
 O plot do gráfico de comparação de gastos entre estados use:
 ```python
-plt.verify_mean('BAHIA', 'ESPIRITO SANTO', 2004, 2007)
+plt.verify_mean('BAHIA', 'RORAIMA', 2004, 2007)
 ```
 ![GitHub Logo](/images/plot_verify_mean.png)
 
