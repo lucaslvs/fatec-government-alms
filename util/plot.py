@@ -54,7 +54,7 @@ class Plot():
 
         plt.figure(1, figsize=(6,6))
         plt.rcParams['font.size'] = 7.0
-        plt.title('Comparação entre o crescimento dos gastos de' + state + ' e ' + state2)
+        plt.title('Comparação entre o crescimento dos gastos de ' + state + ' e ' + state2)
         plt.ylabel('Gastos (Milhões)')
         plt.plot(g1, 'C2', marker = 'o', ms = 6, label = state)
         plt.plot(g2, 'C3', marker = 'o', ms = 6, label = state2)
