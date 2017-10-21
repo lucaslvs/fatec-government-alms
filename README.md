@@ -71,14 +71,17 @@ plt.plot_percent_year('RORAIMA', 2004, 2014)
 ```
 ![GitHub Logo](/images/plot_percent_year.png)
 
->Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
+>Se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
 ```python
 plt.plot_total()
 ```
 ![GitHub Logo](/images/plot_total.png)
 
->Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
+>Por fim, há a possibilidade de exbir um mapa com os pontos dos estados e seus gastos:
+
 ```python
 plt.plot_map(aux, '2016')
 ```
 ![GitHub Logo](/images/mapTotal.png)
+
+OBS: Para usar esta função é necessário adicionar uma chave de API do Google Maps no código <code>plot.py</code>
