@@ -19,8 +19,14 @@ source venv/bin/activate
 >Instale as dependências:
 
 ```sh
-pip install -r requirements.txt
+pip install -r requiriments.txt
 ```
+## Configurando API
+
+Há plot que será necessrio utilizar a API do Google, então, acesse:
+https://developers.google.com/maps/documentation/javascript/get-api-key
+
+Pegue a chave de sua API e insira no arquivo <code>plot.py</code>, para que assim a visualização possa ser feita.
 
 ## Executando
 
@@ -71,8 +77,17 @@ plt.plot_percent_year('RORAIMA', 2004, 2014)
 ```
 ![GitHub Logo](/images/plot_percent_year.png)
 
->Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
+>Se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
 ```python
 plt.plot_total()
 ```
 ![GitHub Logo](/images/plot_total.png)
+
+>Por fim, há a possibilidade de exbir um mapa com os pontos dos estados e seus gastos:
+
+```python
+plt.plot_map(aux, '2016')
+```
+![GitHub Logo](/images/mapTotal.png)
+
+OBS: Para usar esta função é necessário adicionar uma chave de API do Google Maps no código <code>plot.py</code>
