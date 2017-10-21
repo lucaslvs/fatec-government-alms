@@ -1,6 +1,7 @@
 asn1crypto==0.23.0
 attrs==17.2.0
 Automat==0.6.0
+bokeh==0.12.7
 cffi==1.11.0
 constantly==15.1.0
 cryptography==2.0.3
