@@ -76,3 +76,9 @@ plt.plot_percent_year('RORAIMA', 2004, 2014)
 plt.plot_total()
 ```
 ![GitHub Logo](/images/plot_total.png)
+
+>Por fim se necessário exibir todos os dados, e um comparativo de representação entre os estados e seus gastos, use:
+```python
+plt.plot_map(aux, '2016')
+```
+![GitHub Logo](/images/mapTotal.png)
