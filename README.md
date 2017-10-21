@@ -21,6 +21,12 @@ source venv/bin/activate
 ```sh
 pip install -r requiriments.txt
 ```
+## Configurando API
+
+Há plot que será necessrio utilizar a API do Google, então, acesse:
+https://developers.google.com/maps/documentation/javascript/get-api-key
+
+Pegue a chave de sua API e insira no arquivo <code>plot.py</code>, para que assim a visualização possa ser feita.
 
 ## Executando
 
