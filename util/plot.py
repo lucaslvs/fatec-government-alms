@@ -147,6 +147,8 @@ class Plot():
             x_range=DataRange1d(), y_range=DataRange1d(), map_options=map_options
         )
         plot.title.text="Mapa de gastos do Brasil de " + ano
+        # Para pegar uma chave acesse:
+        # https://developers.google.com/maps/documentation/javascript/get-api-key
         plot.api_key="API GOOGLE"
 
         source = ColumnDataSource(
