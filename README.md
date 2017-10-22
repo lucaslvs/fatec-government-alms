@@ -1,6 +1,14 @@
 # fatec-government-alms
 Um Scraper desenvolvido em Python com utilizando Scrapy, Numpy, Pandas e Matplotlib, que busca os gastos com o programa Bolsa Família, com dados de 2004 em diante.
 
+Criado por:
+ * Felipe Menino;
+ * Lucas Varless.
+
+## Objetivo
+
+Tem o objetivo de coletar os dados de gastos do bolsa família por estado e facilitar a exibição dessas informações
+
 ## Configurando ambiente
 
 >Entre no repositório e crie um ambiente virtual com o virtualenv:
