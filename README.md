@@ -1,5 +1,5 @@
 # fatec-government-alms
-Um Scraper desenvolvido em Python com utilizando Scrapy, Numpy, Pandas e Matplotlib, que busca os gastos com o programa Bolsa Família, com dados de 2004 em diante.
+Um Crawler desenvolvido em Python com utilizando Scrapy, Numpy, Pandas e Matplotlib, que busca os gastos com o programa Bolsa Família, com dados de 2004 em diante.
 
 Criado por:
  * Lucas Varlesse
